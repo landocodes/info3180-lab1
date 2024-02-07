@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/app.css') }}"
+    />
     <title>Document</title>
-</head>
-<body>
-    <h1>Orlando Blagrove</h1>
-    <p>I am an enthusiastic person with the mentality of never giving up. I love computers and I am a techie, which is how I became interested in learning to code. I want to better myself as much as possible, one step at a time. Additionally, I am a web developer, photographer, filmmaker, and content creator.</p>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <img
+          src="{{ url_for('static', filename='me.jpg') }}"
+          alt="Orlando Blagrove"
+        />
+      </div>
+      <div class="details">
+        <h1>Orlando Blagrove</h1>
+        <p>
+          I am an enthusiastic person with the mentality of never giving up. I
+          love computers and am a techie, which is how I became interested in
+          learning to code. I want to better myself as much as possible, one
+          step at a time. Additionally, I am a web developer, photographer,
+          filmmaker, and content creator.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
